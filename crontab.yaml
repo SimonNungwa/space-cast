@@ -1,0 +1,7 @@
+jobs:
+  - name: daily_spacecast
+    schedule: "0 7 * * *"
+    command: "${SCRIPT_PATH}"
+    environment:
+      NASA_API_KEY: "${NASA_API_KEY}"
+    log_file: "${LOG_FILE}"
